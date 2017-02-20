@@ -23,7 +23,8 @@ module.exports = {
   resolve: {
     modules: [
       'node_modules',
-      path.join(__dirname, 'app/components/')
+      path.join(__dirname, 'app/components/'),
+      path.join(__dirname, 'app/api/')
     ],
     alias: {
       applicationStyles$: path.join(__dirname, 'app/styles/app.scss'),
