@@ -29,7 +29,8 @@ module.exports = {
     alias: {
       applicationStyles$: path.join(__dirname, 'app/styles/app.scss'),
       actions$: path.join(__dirname, 'app/actions/actions.jsx'),
-      reducers$: path.join(__dirname, 'app/reducers/reducers.jsx')
+      reducers$: path.join(__dirname, 'app/reducers/reducers.jsx'),
+      configureStore$: path.join(__dirname, 'app/store/configureStore.jsx')
     },
     extensions: ['.js', '.jsx']
   },
