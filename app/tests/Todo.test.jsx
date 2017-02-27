@@ -15,7 +15,7 @@ describe('Todo', () => {
         }
         var spy = expect.createSpy();
         var todo = TestUtils.renderIntoDocument(<Todo {...todoData} onToggle={spy} />);
-        var dom = TestUtils.findRenderedDOMComponentWithTag(todo, 'div');
+        var dom = TestUtils.scryRenderedDOMComponentsWithTag(todo, 'div')[0];
         TestUtils.Simulate.click(dom);
         expect(spy).toHaveBeenCalledWith(todoData.id);
     })
