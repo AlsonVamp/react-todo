@@ -27,6 +27,7 @@ module.exports = {
       path.join(__dirname, 'app/api/')
     ],
     alias: {
+      app: path.join(__dirname, 'app/'),
       applicationStyles$: path.join(__dirname, 'app/styles/app.scss'),
       actions$: path.join(__dirname, 'app/actions/actions.jsx'),
       reducers$: path.join(__dirname, 'app/reducers/reducers.jsx'),
