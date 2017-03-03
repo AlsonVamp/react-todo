@@ -1,7 +1,6 @@
 var React = require('react');
 var expect = require('expect');
 var {Provider} = require('react-redux');
-var TodoApp = require('TodoApp');
 var TestUtils = require('react-addons-test-utils');
 
 var configureStore = require('configureStore');
