@@ -7,7 +7,7 @@ module.exports = {
         });
         //filter by searchText
         filteredTodos = filteredTodos.filter((todo) => {
-            if (!todo.text || (todo.text.toLowerCase().indexOf(searchText) != -1))
+            if (!todo.text || (todo.text.toLowerCase().indexOf(searchText.toLowerCase()) != -1))
                 return true
         });
         //sort todos with non-completed first
